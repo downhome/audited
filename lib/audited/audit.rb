@@ -46,7 +46,7 @@ module Audited
 
     included do
       belongs_to :auditable, polymorphic: true
-      belongs_to :user, polymorphic: true
+      belongs_to :user, polymorphic: true, optional: true
       belongs_to :associated, polymorphic: true, optional: true
 
       before_validation :set_audit_user
