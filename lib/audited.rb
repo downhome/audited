@@ -50,6 +50,7 @@ end
 require "audited/auditor"
 
 ActiveSupport.on_load :active_record do
+  require "audited/auditable"
   require "audited/audit"
   include Audited::Auditor
 end
