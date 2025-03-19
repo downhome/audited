@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "set"
-require "audited/yaml_if_text_column_type"
+require_relative "yaml_if_text_column_type"
 
 module Audited
   # Audit saves the changes to ActiveRecord models.  It has the following attributes:
@@ -186,5 +186,4 @@ module Audited
       end
     end
   end
-
 end
